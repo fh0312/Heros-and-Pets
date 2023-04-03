@@ -39,7 +39,7 @@ h2{
   margin:-10px 0 0 0;
   text-align: center;
   grid-area: id;
-  background-color: #293865DA;
+  background-color: #1e293b;
   border-radius: 8pt;
   padding: 10px 20px;
   color: white;
@@ -71,7 +71,7 @@ h2{
   grid-area: pet;
   margin-right: 40px;
   position: relative;
-  background-color: #293865DA;
+  background-color: #1e293b;
   border-radius: 8pt;
   padding: 10px 20px;
   color: white;

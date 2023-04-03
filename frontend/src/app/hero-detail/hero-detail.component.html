@@ -12,7 +12,7 @@
       <label for="hero-name">change name: </label>
       <input id="hero-name" [(ngModel)]="hero.name" placeholder="Hero name"/>    
     </div>
-    <div *ngIf="hero.pet"><span id="Pet">{{hero.name | uppercase}}'s Pet </span><span id="petName">{{hero.pet.name}}</span></div>
+    <div *ngIf="hero.pet"><span id="Pet">{{hero.name}}'s Pet </span><span id="petName">{{hero.pet.name}}</span></div>
     <div id="changePet">
       <label for="pets">choose a new pet: </label>
       <select [(ngModel)]="hero.pet">      

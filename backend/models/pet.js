@@ -5,7 +5,7 @@ var Schema = mongoose.Schema;
 var PetSchema = new Schema({
   id: { type: Number, required: true },
   name: { type: String, required: true },
-});
+}, { collection: 'Pets_Collection' });
 
 
 // Export model.
