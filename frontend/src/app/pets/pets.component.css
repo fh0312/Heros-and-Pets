@@ -1,0 +1,37 @@
+h2 {
+    font-family:Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif; 
+    padding-top: 3%;
+    margin-left:0;  
+    padding-left: 0;
+    border-top: 3pt solid black;
+    font-size: 30pt;
+    text-decoration: dotted;
+    text-shadow: #3f525c;
+    font-variant: small-caps;
+    text-align: center;
+    text-decoration: underline dotted;
+  }
+
+  ul {
+    width: 70%;
+    margin: auto;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+   li {
+    font-family: 'Dekko';
+    font-size: 22px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 2pt solid #ccc;
+    border-radius: 8pt;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 300px;
+    font-weight: bold;
+    color: #333;
+  }

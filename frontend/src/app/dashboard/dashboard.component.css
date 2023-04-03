@@ -1,0 +1,76 @@
+
+h2 {
+  font-family:Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif; 
+  padding-top: 3%;
+  margin-left:0;  
+  padding-left: 0;
+  border-top: 3pt solid black;
+  font-size: 30pt;
+  text-decoration: dotted;
+  text-shadow: #3f525c;
+  font-variant: small-caps;
+  text-align: center;
+  text-decoration: underline dotted;
+}
+
+h2::before {
+  margin-right: 0.3em;
+}
+
+
+.heroes-menu {
+  padding: 0;
+  margin: auto;
+  max-width: auto;
+
+  /* flexbox */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+a {
+  background-color: #3f525c;
+  border-radius: 8pt;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  margin: .5rem auto;
+  box-sizing: border-box;
+
+  /* flexbox */
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+@media (min-width: 600px) {
+  a {
+    width: 18%;
+    box-sizing: content-box;
+  }
+}
+
+a:hover {
+  background-color: #000;
+}
+
+.search{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+app-hero-search{
+  width: 400px;
+}

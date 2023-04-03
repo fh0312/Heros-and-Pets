@@ -1,0 +1,70 @@
+/* AppComponent's private CSS styles */
+
+body{
+  background-color: black;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family:Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif; 
+    font-size: 50px; 
+    font-style: normal; 
+    font-variant: small-caps; 
+    font-weight: 900; 
+    line-height: 36.4px;
+  }
+
+  nav{
+    height: 65px;
+    margin: 0 auto;
+    background-color: #e8e8e8;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 10%;
+    border-radius: 8pt;
+
+
+  }
+
+nav a:hover {
+  color: white;
+  background-color: #42545C;
+}
+
+  nav a {
+    text-align: center;
+    display: block;
+    width: 210px;
+    margin: 0 auto;
+    height: 65px;
+    line-height: 65px;
+    font-size: 20pt;
+    font-weight: bold;
+    align-self: stretch;
+    text-decoration: none;
+    background-color: #e8e8e8;
+    text-align: center;
+    color: #3d3d3d;
+    border-radius: 8pt;
+  }
+  
+  nav a:hover {
+    color: white;
+    background-color: #42545C;
+  }
+  nav a:active {
+    color: white;
+    background-color: #42545C;
+  }
+
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    background-color: lightgrey;
+}

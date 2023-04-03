@@ -1,0 +1,29 @@
+<link href="https://fonts.cdnfonts.com/css/hero-new" rel="stylesheet">
+<link href="href='https://fonts.googleapis.com/css?family=Varela Round" rel='stylesheet'>
+<style>
+  @import url('https://fonts.cdnfonts.com/css/hero-new');
+  
+</style>
+<div *ngIf="hero">
+  <h2>Details of <span id="heroName">{{hero.name | uppercase}}</span>:</h2> 
+  <div id="container">
+    <div ><span id="id">ID </span><span id="_idNum">{{hero._id}}</span></div>
+    <div id="changeName">
+      <label for="hero-name">change name: </label>
+      <input id="hero-name" [(ngModel)]="hero.name" placeholder="Hero name"/>    
+    </div>
+    <div *ngIf="hero.pet"><span id="Pet">{{hero.name | uppercase}}'s Pet </span><span id="petName">{{hero.pet.name}}</span></div>
+    <div id="changePet">
+      <label for="pets">choose a new pet: </label>
+      <select [(ngModel)]="hero.pet">      
+        <option *ngFor="let pet of Pets" [ngValue]="pet">{{pet.name}}</option>
+      </select>  
+  
+    </div>
+  </div>
+  <div id="footer">
+    <button id="back" type="button" (click)="goBack()">Back</button>
+    <button id="apply" type="button" (click)="save()">Apply Changes</button>
+  </div>
+  
+</div>

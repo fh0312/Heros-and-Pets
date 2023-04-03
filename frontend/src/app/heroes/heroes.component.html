@@ -1,0 +1,23 @@
+<h2>My Heroes</h2>
+<div class="container">
+<ul class="heroes">
+  <li *ngFor="let hero of heroes">
+    <a class="heroBttn" routerLink="/detail/{{hero._id}}">
+      <span class="badge">{{hero.name}}</span>
+    </a>
+    <button type="button" class="delete" title="delete hero"
+      (click)="delete(hero)">x</button>
+  </li>
+</ul>
+
+<div id="addHero">
+  <label id="newHeroName" for="new-hero">Add a new Hero </label>
+  <input id="new-hero" value = "Enter new hero name" 
+  onfocus="if(this.value=='Enter new hero name')this.value='';" onblur="if(this.value=='')this.value='Enter new hero name'" #heroName />
+
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button type="button" class="add-button" (click)="add(heroName.value); heroName.value=''">
+    Add hero
+  </button>
+</div>
+</div>

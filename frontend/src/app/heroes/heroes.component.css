@@ -1,0 +1,146 @@
+h2 {
+  font-family:Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif; 
+  padding-top: 3%;
+  margin-left:0;  
+  padding-left: 0;
+  border-top: 3pt solid black;
+  font-size: 30pt;
+  text-decoration: dotted;
+  text-shadow: #3f525c;
+  font-variant: small-caps;
+  text-align: center;
+  text-decoration: underline dotted;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-areas: "add heroes msgs";
+  align-items: center;
+  justify-content: center;
+}
+
+#addHero{
+  margin: auto;
+  grid-area: add;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  margin-left: 3em;
+
+}
+
+#newHeroName{
+  font-variant: small-caps;
+  font-size: 1.3em;
+  font-weight: 400;
+  text-align: right;
+
+}
+
+#new-hero{
+  margin: 15px;
+  border: 1pt solid rgba(128, 128, 128, 0.811);
+  border-radius: 8pt;
+  padding: 4%;
+  width: 90%;
+  text-align: center;
+  color: rgba(128, 128, 128, 0.811);
+
+}
+
+.add-button{
+  background-color: #fff;
+  border: 0 solid #e2e8f0;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+  color: #0d172a;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  line-height: 1;
+  padding: 0.5rem 0.8rem;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+  text-decoration-thickness: auto;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.add-button:hover {
+  background-color: #1e293b;
+  color: #fff;
+}
+
+
+
+.heroes {
+  grid-area: heroes;
+  list-style-type: none;
+  display: grid;
+  margin: auto auto;
+  margin-top: 35px;
+  padding-left: 0;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+  margin-bottom: 35px;
+}
+
+.heroes li {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  background-color: #0f2752;
+  border-radius: 8pt;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px 20px;
+  width: 100%;
+}
+
+.heroes li a {
+  color: #333333;
+  font-size: 0.5em;
+  text-decoration: none;
+}
+
+.heroes li .heroBttn{
+  margin-top: 10px;
+  align-self: flex-start;
+}
+.heroes li .badge {
+  margin: auto;
+  letter-spacing: 2px;
+  font-size: calc(1.2vw + 0.2em);
+  padding: 0.5em 0.6em;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.heroes li .delete {
+  align-self: flex-end;
+  background-color: transparent;
+  line-height: 35px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 16pt;
+  margin: auto;
+}
+
+.heroes li .delete:hover {
+  color: #cc0000;
+}
+
+.heroes li:hover {
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
