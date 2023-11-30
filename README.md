@@ -1,5 +1,5 @@
 
-# Projeto - MEAN Stack 
+
 # Aplicação Web desenhada em MEAN STACK, com o intuito de Criar/Manipular/Mostrar Herois e os seus Pets.
  - Utilização do Angular Tutorial of Heroes como ideia de projeto.
  - Realizado como exercicio na UC - Projeto de Sistemas de Informação - LEI - FCUL - ULisboa - PT
